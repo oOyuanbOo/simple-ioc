@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//RONGDI//DTD BEAN//CN"
-		"../dtd/beans.dtd">
-<beans>
-	<bean id="test1" class="test1"></bean>
-	<bean id="test2" class="test2"></bean>
-	<bean id="test3" class="test3"></bean>
-</beans>

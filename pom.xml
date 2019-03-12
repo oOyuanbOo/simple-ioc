@@ -62,11 +62,11 @@
         </resources>
         <testResources>
             <testResource>
-                <directory>src/test/java</directory>
+                <directory>test/java</directory>
                 <filtering>true</filtering>
             </testResource>
             <testResource>
-                <directory>src/test/resources</directory>
+                <directory>test/resources</directory>
                 <includes>
                     <include>**/*.xml</include>
                     <include>**/*.properties</include>
@@ -74,7 +74,7 @@
                 <filtering>true</filtering>
             </testResource>
         </testResources>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <testSourceDirectory>test/java</testSourceDirectory>
         <testOutputDirectory>target/test-classes</testOutputDirectory>
         <plugins>
             <plugin>

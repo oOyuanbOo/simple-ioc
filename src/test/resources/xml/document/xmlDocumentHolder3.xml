@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//ABABAB//DTD BEAN//CN"
-		"../dtd/beans.dtd">
-<beans>
-	<bean id="test" class="test"></bean>
-</beans>

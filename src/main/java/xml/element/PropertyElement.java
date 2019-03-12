@@ -1,8 +1,6 @@
 package main.java.xml.element;
 
 
-import main.java.xml.element.LeafElement;
-
 /**
  * @author rongdi
  *

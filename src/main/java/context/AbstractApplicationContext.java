@@ -1,15 +1,5 @@
 package main.java.context;
 
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import main.java.create.BeanCreator;
 import main.java.create.BeanCreatorImpl;
 import main.java.create.PropertyHandler;
@@ -27,6 +17,10 @@ import main.java.xml.element.parser.BeanElementParser;
 import main.java.xml.element.parser.BeanElementParserImpl;
 import org.dom4j.Document;
 import org.dom4j.Element;
+
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.util.*;
 
 /**
  * 该类继承ApplicationContext接口，定义成抽象类是因为本类中定义的方法还不够完善
