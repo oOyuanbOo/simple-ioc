@@ -1,4 +1,4 @@
-package java.xml.element.loader;
+package xml.element.loader;
 
 import static org.junit.Assert.assertNotNull;
 

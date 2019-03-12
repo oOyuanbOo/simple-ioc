@@ -1,4 +1,4 @@
-package java.xml.element.parser;
+package xml.element.parser;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

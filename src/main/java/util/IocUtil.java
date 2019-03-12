@@ -1,11 +1,12 @@
 package main.java.util;
+
 /**
- * ����һ��������
+ * 这是一个帮助类
  */
 public class IocUtil {
 	/**
-	 * �����������java�еļ�����������������ô�����������ͣ�ע��Integer.type���ǻ������class����
-	 * ������ǻ���������ʹ��getClass������������Class����
+	 * 如果该类型是java中的几个基本数据类型那么返回它的类型，注意Integer.type就是获得他的class对象
+	 * 如果不是基础类型则使用getClass（）返回它的Class对象
 	 * @param obj
 	 * @return
 	 */
@@ -28,17 +29,18 @@ public class IocUtil {
 			return Byte.TYPE;
 		}
 		return obj.getClass();
-	}
-	/**
-	 * �ж�className�������Ƿ�Ϊ�������͡���java.lang.Integer, �ǵĻ������ݽ���ת��
-	 * �ɶ�Ӧ�����͸÷����ǹ������еķ������õģ������Ǹ���type���͵�ֵ����Ӧ��value����ת��
-	 * �ɶ�Ӧ��type���͵�ֵ
+	}/**
+	 * 判断className的类型是否为基础类型。如java.lang.Integer, 是的话将数据进行转换
+	 * 成对应的类型该方法是供本类中的方法调用的，作用是根据type类型的值将对应的value数据转换
+	 * 成对应的type类型的值
 	 * @param className
 	 * @param data
 	 * @return
 	 */
 	public static Object getValue(String className, String data) {
-
+		/**
+		 * 下面的所有if和else if都是判断是否是java的8中基本数据类型的包装类型
+		 */
 		if (isType(className, "Integer")) {
 			return Integer.parseInt(data);
 		} else if (isType(className, "Boolean")) {
@@ -53,19 +55,21 @@ public class IocUtil {
 			return Float.valueOf(data);
 		} else if (isType(className, "Character")) {
 			/**
-			 * �����Character������ȡ��һ���ַ�
+			 * 如果是Character类型则取第一个字符
 			 */
 			return data.charAt(0);
 		} else if (isType(className, "Byte")) {
 			return Byte.valueOf(data);
 		} else {
-
+			/**
+			 * 如果不是8种基本数据类型的包装类那么就是自定义的类了，直接返回该值
+			 */
 			return data;
 		}
 	}
 	/**
-	 * �÷������ж��������Ƿ��ж�Ӧ��type�ַ����ķ��������ж�className:java.lang.Integer��
-	 * �Ƿ����Integer�����ͷ���true���������򷵻�false���÷����ǹ�����ķ������õ�
+	 * 该方法是判断类名中是否含有对应的type字符串的方法，如判断className:java.lang.Integer中
+	 * 是否包含Integer这样就返回true，不包含则返回false，该方法是供上面的方法调用的
 	 * @param className
 	 * @param type
 	 * @return

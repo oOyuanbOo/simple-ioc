@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yuan.ioc</groupId>
-    <artifactId>com-yuan-ioc</artifactId>
+    <groupId>simple.ioc</groupId>
+    <artifactId>simple-ioc</artifactId>
     <version>1.0-SNAPSHOT</version>
     <!-- 指明编译源代码时使用的字符编码，maven编译的时候默认使用的GBK编码，
      通过project.build.sourceEncoding属性设置字符编码，告诉maven这个项目使用UTF-8来编译 -->
