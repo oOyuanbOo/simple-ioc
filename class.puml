@@ -1,0 +1,81 @@
+@startuml
+
+abstract class AbstractApplicationContext
+
+interface ApplicationContext
+
+class XmlApplicationContext
+
+
+interface BeanCreator
+
+class BeanCreatorImpl
+
+interface PropertyHandler
+
+class PropertyHandlerImpl
+
+
+class BeanCreateException
+
+class PropertyException
+
+class IocUtil
+
+
+interface Autowire
+
+class ByNameAutowire
+
+class NoAutowire
+
+
+interface DocumentHolder
+
+class XmlDocumentHolder
+
+class XmlEntityResolver
+
+
+interface ElementLoader
+
+class ElementLoaderImpl
+
+interface BeanElementParser
+
+class BeanElementParserImpl
+
+class CollectionElement
+
+interface LeafElement
+
+class PropertyElement
+
+class RefElement
+
+class ValueElement
+
+
+ApplicationContext <|..AbstractApplicationContext
+AbstractApplicationContext <-- XmlApplicationContext
+
+BeanCreator <|.. BeanCreatorImpl
+PropertyHandler <|.. PropertyHandlerImpl
+
+Autowire <|.. ByNameAutowire
+Autowire <|.. NoAutowire
+
+DocumentHolder <|.. XmlDocumentHolder
+
+ElementLoader <|.. ElementLoaderImpl
+
+BeanElementParser <|.. BeanElementParserImpl
+
+LeafElement <|.. CollectionElement
+
+LeafElement <|.. RefElement
+
+LeafElement <|.. ValueElement
+
+
+@enduml
