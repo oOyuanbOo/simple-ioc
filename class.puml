@@ -67,6 +67,8 @@ AbstractApplicationContext <-- Autowire
 AbstractApplicationContext <-- ByNameAutowire
 AbstractApplicationContext <-- NoAutowire
 AbstractApplicationContext <-- BeanCreateException
+AbstractApplicationContext <-- PropertyElement
+AbstractApplicationContext <-- LeafElement
 
 BeanCreator <|.. BeanCreatorImpl
 PropertyHandler <|.. PropertyHandlerImpl
@@ -74,6 +76,7 @@ BeanCreatorImpl <-- BeanCreateException
 BeanCreatorImpl <-- IocUtil
 PropertyHandlerImpl <-- IocUtil
 PropertyHandlerImpl <-- PropertyException
+XmlDocumentHolder <-- XmlEntityResolver
 
 
 Autowire <|.. ByNameAutowire

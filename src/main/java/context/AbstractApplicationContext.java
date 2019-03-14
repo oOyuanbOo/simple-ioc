@@ -377,7 +377,6 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
 	}
 	/**
 	 * 得到一个bean里面配置的构造参数
-	 * @param e
 	 * @return
 	 */
 	protected List<Object> getConstructArgs(Element beanElment) {
