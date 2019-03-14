@@ -58,9 +58,23 @@ class ValueElement
 
 ApplicationContext <|..AbstractApplicationContext
 AbstractApplicationContext <-- XmlApplicationContext
+AbstractApplicationContext <- DocumentHolder
+AbstractApplicationContext <- ElementLoader
+AbstractApplicationContext <- BeanElementParser
+AbstractApplicationContext <- BeanCreator
+AbstractApplicationContext <- PropertyHandler
+AbstractApplicationContext <-- Autowire
+AbstractApplicationContext <-- ByNameAutowire
+AbstractApplicationContext <-- NoAutowire
+AbstractApplicationContext <-- BeanCreateException
 
 BeanCreator <|.. BeanCreatorImpl
 PropertyHandler <|.. PropertyHandlerImpl
+BeanCreatorImpl <-- BeanCreateException
+BeanCreatorImpl <-- IocUtil
+PropertyHandlerImpl <-- IocUtil
+PropertyHandlerImpl <-- PropertyException
+
 
 Autowire <|.. ByNameAutowire
 Autowire <|.. NoAutowire
