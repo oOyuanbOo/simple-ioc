@@ -1,0 +1,28 @@
+@startuml
+
+XmlApplicationContext -> AbstractApplicationContext : 1. initElements(xmlPaths)
+activate AbstractApplicationContext
+loop xml files size
+    AbstractApplicationContext -> DocumentHolder : 1.1 getDocument
+    activate DocumentHolder
+    return  Document doc
+    AbstractApplicationContext -> ElementLoader : 1.2 addBeanElements
+    activate ElementLoader
+end
+
+XmlApplicationContext -> AbstractApplicationContext : 2. createBeanInstances(xmlPaths)
+AbstractApplicationContext -> ElementLoader : 2.1 getBeanElements
+return Collection<Element> elements
+loop elements size
+AbstractApplicationContext -> EelementParser : 2.2 isLazy
+activate EelementParser
+return boolean lazy
+alt !lazy
+    AbstractApplicationContext -> AbstractApplicationContext : Object bean = getBeanInstance
+    alt bean == null
+        AbstractApplicationContext -> AbstractApplicationContext : handleBean(bean)
+    end
+end
+
+
+@enduml
