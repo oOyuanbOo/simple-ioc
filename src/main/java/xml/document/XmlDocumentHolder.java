@@ -1,10 +1,10 @@
-package main.java.xml.document;
+package xml.document;
 
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import main.java.xml.document.DocumentHolder;
+import xml.document.DocumentHolder;
 import org.dom4j.Document;
 import org.dom4j.io.SAXReader;
 

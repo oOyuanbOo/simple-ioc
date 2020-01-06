@@ -1,4 +1,4 @@
-package main.java.create;
+package create;
 
 import java.lang.reflect.Method;
 import java.util.Map;

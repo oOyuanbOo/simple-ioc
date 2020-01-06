@@ -1,4 +1,4 @@
-package main.java.javautils;
+package javautils;
 
 import java.util.HashMap;
 import java.util.WeakHashMap;

@@ -1,4 +1,4 @@
-package main.java.xml.element;
+package xml.element;
 
 /**
  * @author rongdi

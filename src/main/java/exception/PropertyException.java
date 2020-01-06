@@ -1,4 +1,4 @@
-package main.java.exception;
+package exception;
 
 /**
  * ����һ��������ص��쳣

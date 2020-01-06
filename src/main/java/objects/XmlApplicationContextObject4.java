@@ -1,4 +1,4 @@
-package main.java.objects;
+package objects;
 
 import java.util.List;
 import java.util.Set;

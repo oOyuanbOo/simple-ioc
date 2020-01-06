@@ -1,4 +1,4 @@
-package main.java.xml.element.loader;
+package xml.element.loader;
 
 import java.util.Collection;
 

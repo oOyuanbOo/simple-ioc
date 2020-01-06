@@ -1,10 +1,10 @@
-package main.java.xml.element.parser;
+package xml.element.parser;
 
 import java.util.List;
 
-import main.java.xml.autowire.Autowire;
-import main.java.xml.element.LeafElement;
-import main.java.xml.element.PropertyElement;
+import xml.autowire.Autowire;
+import xml.element.LeafElement;
+import xml.element.PropertyElement;
 import org.dom4j.Element;
 
 /**

@@ -1,14 +1,14 @@
-package xmltest.context;
+package java.xmltest.context;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import main.java.context.ApplicationContext;
-import main.java.context.XmlApplicationContext;
-import main.java.objects.XmlApplicationContextObject1;
-import main.java.objects.XmlApplicationContextObject2;
-import main.java.objects.XmlApplicationContextObject3;
-import main.java.objects.XmlApplicationContextObject4;
+import context.ApplicationContext;
+import context.XmlApplicationContext;
+import objects.XmlApplicationContextObject1;
+import objects.XmlApplicationContextObject2;
+import objects.XmlApplicationContextObject3;
+import objects.XmlApplicationContextObject4;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,7 +22,7 @@ public class XmlApplicationContextTest {
 	@Before
 	public void setUp() throws Exception {
 		ctx = new XmlApplicationContext(
-				new String[] { "/resources/xml/context/XmlApplicationContext1.xml" });
+				new String[] {"/xml/context/XmlApplicationContext1.xml"});
 	}
 
 	@After

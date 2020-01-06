@@ -1,13 +1,13 @@
-package main.java.xml.element.parser;
+package xml.element.parser;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.util.IocUtil;
-import main.java.xml.autowire.Autowire;
-import main.java.xml.autowire.ByNameAutowire;
-import main.java.xml.autowire.NoAutowire;
-import main.java.xml.element.*;
+import util.IocUtil;
+import xml.autowire.Autowire;
+import xml.autowire.ByNameAutowire;
+import xml.autowire.NoAutowire;
+import xml.element.*;
 import org.dom4j.Element;
 
 public class BeanElementParserImpl implements BeanElementParser {

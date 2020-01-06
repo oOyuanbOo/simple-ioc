@@ -1,6 +1,6 @@
-package main.java.xml.element;
+package xml.element;
 
-import main.java.xml.element.LeafElement;
+import xml.element.LeafElement;
 
 import java.util.ArrayList;
 import java.util.List;
