@@ -1,4 +1,4 @@
-package main.java.xml.document;
+package xml.document;
 
 import java.io.IOException;
 import java.io.InputStream;

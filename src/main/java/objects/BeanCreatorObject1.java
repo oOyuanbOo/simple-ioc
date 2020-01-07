@@ -1,4 +1,4 @@
-package main.java.objects;
+package objects;
 
 public class BeanCreatorObject1 {
 	private String name;

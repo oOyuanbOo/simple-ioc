@@ -1,4 +1,4 @@
-package main.java.xml.autowire;
+package xml.autowire;
 
 /**
  * @author rongdi

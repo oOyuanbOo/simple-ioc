@@ -1,4 +1,4 @@
-package xmltest.element.parser;
+package java.xmltest.element.parser;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -7,16 +7,16 @@ import static org.junit.Assert.assertTrue;
 import java.util.List;
 
 
-import main.java.xml.autowire.Autowire;
-import main.java.xml.document.XmlDocumentHolder;
-import main.java.xml.element.LeafElement;
-import main.java.xml.element.PropertyElement;
-import main.java.xml.element.RefElement;
-import main.java.xml.element.ValueElement;
-import main.java.xml.element.loader.ElementLoader;
-import main.java.xml.element.loader.ElementLoaderImpl;
-import main.java.xml.element.parser.BeanElementParser;
-import main.java.xml.element.parser.BeanElementParserImpl;
+import xml.autowire.Autowire;
+import xml.document.XmlDocumentHolder;
+import xml.element.LeafElement;
+import xml.element.PropertyElement;
+import xml.element.RefElement;
+import xml.element.ValueElement;
+import xml.element.loader.ElementLoader;
+import xml.element.loader.ElementLoaderImpl;
+import xml.element.parser.BeanElementParser;
+import xml.element.parser.BeanElementParserImpl;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.junit.After;

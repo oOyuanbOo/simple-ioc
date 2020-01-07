@@ -1,4 +1,4 @@
-package xmltest.element.loader;
+package java.xmltest.element.loader;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -6,7 +6,7 @@ import java.io.File;
 import java.util.Iterator;
 
 
-import main.java.xml.document.XmlDocumentHolder;
+import xml.document.XmlDocumentHolder;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.junit.After;
@@ -17,12 +17,12 @@ public class ElementLoaderImplTest {
 
 	XmlDocumentHolder xmlHolder;
 
-	main.java.xml.element.loader.ElementLoader elementLoader;
+	xml.element.loader.ElementLoader elementLoader;
 
 	@Before
 	public void setUp() throws Exception {
 		xmlHolder = new XmlDocumentHolder();
-		elementLoader = new main.java.xml.element.loader.ElementLoaderImpl();
+		elementLoader = new xml.element.loader.ElementLoaderImpl();
 		
 	}
 

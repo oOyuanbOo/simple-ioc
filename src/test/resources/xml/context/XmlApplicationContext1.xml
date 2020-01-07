@@ -2,9 +2,9 @@
 <!DOCTYPE beans PUBLIC "-//RONGDI//DTD BEAN//CN"
 		"../../dtd/beans.dtd">
  <beans >
-	<bean id="test1" class="main.java.objects.XmlApplicationContextObject1"></bean>
+	<bean id="test1" class="objects.XmlApplicationContextObject1"></bean>
 	
-	<bean id="test2" class="main.java.objects.XmlApplicationContextObject2">
+	<bean id="test2" class="objects.XmlApplicationContextObject2">
 		<constructor-arg>
 			<value type="java.lang.String">rongdi</value>
 		</constructor-arg>
@@ -17,24 +17,24 @@
 	</bean>
 	
 	<bean id="test3" 
-	class="main.java.objects.XmlApplicationContextObject1" singleton="false">
+	class="objects.XmlApplicationContextObject1" singleton="false">
 	
 	</bean>
 	
 	<!-- 测试autowire -->
-	<bean class="main.java.objects.XmlApplicationContextObject1" 
+	<bean class="objects.XmlApplicationContextObject1"
 		id="object1">
 	</bean>
 	<bean id="test4" 
-		class="main.java.objects.XmlApplicationContextObject3" 
+		class="objects.XmlApplicationContextObject3"
 		>
 	</bean>
 	<!-- 测试lazy-init -->
-	<bean id="test5" class="main.java.objects.XmlApplicationContextObject3" lazy-init="true">
+	<bean id="test5" class="objects.XmlApplicationContextObject3" lazy-init="true">
 	</bean>
 	
 	<!-- 测试设值注入 -->
-	<bean id="test6" class="main.java.objects.XmlApplicationContextObject3">
+	<bean id="test6" class="objects.XmlApplicationContextObject3">
 		<property name="name">
 			<value type="java.lang.String">rongdi</value>
 		</property>
@@ -45,7 +45,7 @@
 			<ref bean="object1"/>
 		</property>
 	</bean>
-	<bean id="test7" class="main.java.objects.XmlApplicationContextObject4" >
+	<bean id="test7" class="objects.XmlApplicationContextObject4" >
 		<property name="list">
 			<collection type="list">
 				<value type="java.lang.String">rongdi</value>

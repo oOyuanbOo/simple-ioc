@@ -1,5 +1,8 @@
 package javautils;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.LinkedList;
 
 /*
@@ -11,15 +14,65 @@ import java.util.LinkedList;
 public class LinkedListTest {
     public static void main(String[] args) {
         // 测试LinkedList的API
-        testLinkedListAPIs() ;
+//        testLinkedListAPIs() ;
 
         // 将LinkedList当作 LIFO(后进先出)的堆栈
 //        useLinkedListAsLIFO();
-        // 1 2 3 4 pollLast peekLast
 
         // 将LinkedList当作 FIFO(先进先出)的队列
 //        useLinkedListAsFIFO();
-        // 1 2 3 4 poll peek
+
+//        ArrayList<Object> clone = new ArrayList<>(10);
+//        clone.add(1);
+//
+//        Object clone1 = clone.clone();
+//        System.out.println(clone1);
+
+          ArrayList list = new ArrayList(7);
+          list.add(1);
+          list.add(2);
+          list.add(3);
+          list.add(4);
+          list.add(5);
+          list.add(6);
+          list.add(7);
+
+        ArrayList list2 = new ArrayList(4);
+        list2.add(1);
+        list2.add(2);
+        list2.add(3);
+        list2.add(4);
+//        batchRemove(list, list2, false);
+        batchRemove(list, list2, true);
+    }
+
+    private static boolean batchRemove(ArrayList list , Collection<?> c, boolean complement) {
+        int size = list.size();
+        final Object[] elementData = list.toArray();
+        int r = 0, w = 0;
+        boolean modified = false;
+        try {
+            for (; r < size; r++)
+                if (c.contains(elementData[r]) == complement)
+                    elementData[w++] = elementData[r];
+        } finally {
+            // Preserve behavioral compatibility with AbstractCollection,
+            // even if c.contains() throws.
+            if (r != size) {
+                System.arraycopy(elementData, r,
+                        elementData, w,
+                        size - r);
+                w += size - r;
+            }
+            if (w != size) {
+                // clear to let GC do its work
+                for (int i = w; i < size; i++)
+                    elementData[i] = null;
+                size = w;
+                modified = true;
+            }
+        }
+        return modified;
     }
 
     /*
@@ -36,7 +89,6 @@ public class LinkedListTest {
         llist.add("1");
         llist.add("2");
         llist.add("3");
-        System.out.println(llist);
 
         // 将“4”添加到第一个位置
         llist.add(1, "4");

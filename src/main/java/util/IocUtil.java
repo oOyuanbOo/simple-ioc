@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 
 /**
  * 这是一个帮助类

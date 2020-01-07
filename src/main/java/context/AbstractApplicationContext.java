@@ -1,20 +1,20 @@
-package main.java.context;
+package context;
 
-import main.java.create.BeanCreator;
-import main.java.create.BeanCreatorImpl;
-import main.java.create.PropertyHandler;
-import main.java.create.PropertyHandlerImpl;
-import main.java.exception.BeanCreateException;
-import main.java.xml.autowire.Autowire;
-import main.java.xml.autowire.ByNameAutowire;
-import main.java.xml.autowire.NoAutowire;
-import main.java.xml.document.DocumentHolder;
-import main.java.xml.document.XmlDocumentHolder;
-import main.java.xml.element.*;
-import main.java.xml.element.loader.ElementLoader;
-import main.java.xml.element.loader.ElementLoaderImpl;
-import main.java.xml.element.parser.BeanElementParser;
-import main.java.xml.element.parser.BeanElementParserImpl;
+import create.BeanCreator;
+import create.BeanCreatorImpl;
+import create.PropertyHandler;
+import create.PropertyHandlerImpl;
+import exception.BeanCreateException;
+import xml.autowire.Autowire;
+import xml.autowire.ByNameAutowire;
+import xml.autowire.NoAutowire;
+import xml.document.DocumentHolder;
+import xml.document.XmlDocumentHolder;
+import xml.element.*;
+import xml.element.loader.ElementLoader;
+import xml.element.loader.ElementLoaderImpl;
+import xml.element.parser.BeanElementParser;
+import xml.element.parser.BeanElementParserImpl;
 import org.dom4j.Document;
 import org.dom4j.Element;
 

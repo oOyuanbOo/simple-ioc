@@ -1,4 +1,4 @@
-package main.java.xml.document;
+package xml.document;
 
 import org.dom4j.Document;
 

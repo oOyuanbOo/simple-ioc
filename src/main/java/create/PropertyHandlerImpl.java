@@ -1,8 +1,8 @@
-package main.java.create;
+package create;
 
-import main.java.exception.BeanCreateException;
-import main.java.exception.PropertyException;
-import main.java.util.IocUtil;
+import exception.BeanCreateException;
+import exception.PropertyException;
+import util.IocUtil;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
-package main.java.xml.element;
+package xml.element;
 
-import main.java.xml.element.LeafElement;
+import xml.element.LeafElement;
 
 /**
  * ���Ǵ���value��ǩ�Ľڵ�Ԫ�أ�ʵ����LeafElement�ӿ�

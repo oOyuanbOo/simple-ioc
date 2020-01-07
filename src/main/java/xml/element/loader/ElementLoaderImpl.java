@@ -1,11 +1,11 @@
-package main.java.xml.element.loader;
+package xml.element.loader;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import main.java.xml.element.loader.ElementLoader;
+import xml.element.loader.ElementLoader;
 import org.dom4j.Document;
 import org.dom4j.Element;
 

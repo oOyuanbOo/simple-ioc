@@ -1,6 +1,6 @@
-package xmltest.document;
+package java.xmltest.document;
 
-import main.java.xml.document.XmlDocumentHolder;
+import xml.document.XmlDocumentHolder;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;

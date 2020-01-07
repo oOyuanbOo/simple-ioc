@@ -1,4 +1,4 @@
-package main.java.context;
+package context;
 
 /**
  * 这是真正使用的IoC的应用框架类，可以创建所有配置好的类的实例
