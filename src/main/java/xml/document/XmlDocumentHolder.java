@@ -54,7 +54,7 @@ public class XmlDocumentHolder implements DocumentHolder {
 			/**
 			 * 设置用来验证的dtd的输入源
 			 */
-			reader.setEntityResolver(new XmlEntityResolver());
+			reader.setEntityResolver(new main.java.xml.document.XmlEntityResolver());
 			/**
 			 * 根据xml的路径读取出Document对象
 			 */

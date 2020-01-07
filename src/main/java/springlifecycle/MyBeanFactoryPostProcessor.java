@@ -1,5 +1,4 @@
-package springlifecycle;
-
+package main.java.springlifecycle;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
