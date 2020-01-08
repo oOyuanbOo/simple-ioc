@@ -21,7 +21,7 @@ public class XmlEntityResolver implements EntityResolver {
 		 */
 		if ("-//RONGDI//DTD BEAN//CN".equals(publicId)&& "dtd/beans.dtd".equals(systemId)) {
 			InputStream stream = this.getClass().
-			getResourceAsStream("/src/main/java/dtd/beans.dtd");
+			getResourceAsStream("/src/dtd/beans.dtd");
 			return new InputSource(stream);
 		} 
 		return null;

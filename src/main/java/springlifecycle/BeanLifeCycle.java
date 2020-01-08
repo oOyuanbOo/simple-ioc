@@ -1,4 +1,4 @@
-package main.java.springlifecycle;
+package springlifecycle;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -12,7 +12,7 @@ public class BeanLifeCycle {
         ApplicationContext factory = new ClassPathXmlApplicationContext("beans.xml");
         System.out.println("容器初始化成功");
         //得到Preson，并使用
-        main.java.springlifecycle.Person person = factory.getBean("person", main.java.springlifecycle.Person.class);
+        springlifecycle.Person person = factory.getBean("person", springlifecycle.Person.class);
         System.out.println(person);
 
         System.out.println("现在开始关闭容器！");
