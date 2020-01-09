@@ -9,13 +9,13 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import springframework.lifecycle.beans.ApplicationContextAwareUtil;
 import springframework.lifecycle.beans.TestBean1;
 import springframework.lifecycle.beans.TestBean1Inteface;
+import springframework.lifecycle.beans.TestBean2;
 import springframework.lifecycle.proxy.TestBean1Proxy;
 
 import java.lang.reflect.Proxy;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:springxml/spring-context-test.xml")
-public class LifecycleTest {
+
+public class LifecycleTest extends BaseTest{
 
     @Autowired
     private TestBean1 testBean1;
@@ -41,6 +41,12 @@ public class LifecycleTest {
     @Test
     public void testBeanNameAware(){
         new ApplicationContextAwareUtil().getBean(TestBean1.class);
+    }
+
+    @Test
+    public void testBeanPostProfessor(){
+
+        System.out.println("11");
     }
 
 }
